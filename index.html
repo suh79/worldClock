@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World clock Siri</title>
 </head>
 <body>
 <div class="container">
     <h1>World clock</h1>
-<select id="city-selector">
-    <option value="select">Select a city..</option>
-    <option value="los_Angeles">Los angeles</option>
-    <option value="Paris">Paris</option>
-    <option value="Tokyo">Tokyo</option>
-    <option value="Sydney">Sydney</option>
-    <option value="Moscow">Moscow</option>
-    <option value="Dubai">Dubai</option>
-    <option value="Mumbai">Mumbai</option>
-    <option value="Beijing">Beijing</option>
-    <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+<select id="city">
+    <option value="">Select a city..</option>
+    <option value="current">Current location</option>
+    <option value="America/Los_Angeles">Los angeles</option>
+    <option value="Europe/Paris">Paris</option>
+    <option value="Asia/Tokyo">Tokyo</option>
+    <option value="Australia/Sydney">Sydney</option>
+    <option value="Europe/Moscow">Moscow</option>
+    <option value="Asia/Dubai">Dubai</option>
+    <option value="Asia/Kolkata">Kolkata</option>
+    <option value="Asia/Shanghai">Shanghai</option>
+    <option value="America/Sao_Paulo">Sao Paulo</option>
 </select>
 
+<div id="cities" >
 <div class="city" id="los_Angeles">
     <div>
     <h2>Los Angeles 🇺🇸</h2>
@@ -40,9 +42,7 @@
      <div class="time"></div>
 </div>
 </div>
-
-</body>
-
+</div>;
 
 <footer>
     <p>This project was coded with ❤️ by <strong> Siri</strong> 
@@ -51,4 +51,5 @@
         target="_blank">open sourced on GitHub.</a></p>
 </footer>
 <script src="javascript/index.js"></script>
+</body>
 </html>
